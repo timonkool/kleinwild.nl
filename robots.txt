@@ -1,0 +1,8 @@
+# Klein Wild: alle zoekmachines en AI-crawlers (zoals Googlebot, Bingbot,
+# ClaudeBot, GPTBot, OAI-SearchBot en PerplexityBot) mogen de hele site lezen.
+# Blokkeer hier niets zolang de pagina's nog <meta name="robots" content="noindex">
+# hebben: een geblokkeerde crawler ziet die noindex-regel namelijk niet.
+User-agent: *
+Allow: /
+
+Sitemap: https://kleinwild.nl/sitemap.xml
