@@ -17,3 +17,12 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   .kw-nav::-webkit-scrollbar{display:none}
   .kw-nav a{white-space:nowrap;flex:none}
 }
+
+/* Afzetlint "In opbouw" bovenaan elke pagina */
+.tape{position:relative;z-index:60;background:#FFD200;color:#111;overflow:hidden;white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,.18)}
+.tape::before,.tape::after{content:"";position:absolute;left:0;right:0;height:7px;background:repeating-linear-gradient(-45deg,#111 0 10px,#FFD200 10px 20px)}
+.tape::before{top:0}
+.tape::after{bottom:0}
+.tape__text{display:flex;align-items:center;gap:22px;padding:15px 0;font:700 14px/1 'Libre Franklin',sans-serif;letter-spacing:.24em;text-transform:uppercase}
+.tape__text i{width:9px;height:9px;background:#111;transform:rotate(45deg);flex:none}
+@media (max-width:760px){.tape__text{font-size:12px;gap:16px;padding:13px 0}}
